@@ -12,11 +12,11 @@ namespace Zoolandia
                 {
                     var bird=new Birds
                     {
-                        name=args[1],
-                        height=Convert.ToInt16(args[2]),
-                        weight=Convert.ToInt16(args[3]),
-                        wingspan=Convert.ToInt16(args[4]),
-                        flightStyle=args[5]
+                        // name=args[1],
+                        height=Convert.ToInt16(args[1]),
+                        weight=Convert.ToInt16(args[2]),
+                        wingspan=Convert.ToInt16(args[3]),
+                        flightStyle=args[4]
                     };
                     Console.WriteLine(bird.description());
                 } 
@@ -24,10 +24,10 @@ namespace Zoolandia
                 {
                     var reptile=new Reptiles 
                     {
-                        name=args[1],
-                        height=Convert.ToInt16(args[2]),
-                        weight=Convert.ToInt16(args[3]),
-                        scaleTexture=args[4]
+                        // name=args[1],
+                        height=Convert.ToInt16(args[1]),
+                        weight=Convert.ToInt16(args[2]),
+                        scaleTexture=args[3]
                         
                     };
                     Console.WriteLine(reptile.description());
@@ -37,11 +37,11 @@ namespace Zoolandia
                 {
                     var fishy=new Fish 
                     {
-                        name=args[1],
-                        height=Convert.ToInt16(args[2]),
-                        weight=Convert.ToInt16(args[3]),
-                        fins=Convert.ToInt16(args[4]),
-                        size=args[5]
+                        // name=args[1],
+                        height=Convert.ToInt16(args[1]),
+                        weight=Convert.ToInt16(args[2]),
+                        fins=Convert.ToInt16(args[3]),
+                        size=args[4]
                         
                     };
                     Console.WriteLine(fishy.description());
@@ -51,11 +51,11 @@ namespace Zoolandia
                 {
                     var cat=new Cats 
                     {
-                        name=args[1],
-                        height=Convert.ToInt16(args[2]),
-                        weight=Convert.ToInt16(args[3]),
-                        color=args[4],
-                        furType=args[5]
+                        // name=args[1],
+                        height=Convert.ToInt16(args[1]),
+                        weight=Convert.ToInt16(args[2]),
+                        color=args[3],
+                        furType=args[4]
                         
                     };
                     Console.WriteLine(cat.description());

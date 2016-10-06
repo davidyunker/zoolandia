@@ -4,11 +4,18 @@ namespace Zoolandia
 {
 
     public class Birds: Animal {
+
+
+        public Birds ()
+            {
+            this.name = "Pidgey";
+            }
+
         public int wingspan  { get; set; }
 
         public string flightStyle {get; set;}
 
-
+        
         public override string description()
         {
             string message=string.Empty;
