@@ -6,9 +6,9 @@ namespace Zoolandia
     public class Reptiles: Animal {
         public string scaleTexture  { get; set; }
 
-    public Reptiles ()
+    public Reptiles (string name)
             {
-            this.name = "Slimey";
+            this.name = name;
             }
 
       public override string description()

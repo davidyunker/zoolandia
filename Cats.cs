@@ -8,9 +8,9 @@ namespace Zoolandia
         public string furType {get; set;}
 
 
-        public Cats ()
+          public Cats (string name)
             {
-            this.name = "Renbear";
+            this.name = name;
             }
         public override string description()
             {

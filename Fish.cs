@@ -9,9 +9,9 @@ namespace Zoolandia
         public string size {get; set;}
 
 
-        public Fish ()
+         public Fish (string name)
             {
-            this.name = "Gyrados";
+            this.name = name;
             }
              public override string description()
         {

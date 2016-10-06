@@ -10,19 +10,28 @@ namespace Zoolandia
 
              if(animalType=="birds") 
                 {
-                    var bird=new Birds
-                    {
+                    // Birds bird=new Birds("Pidgey")
+                    // {
+                    //     // name=args[1],
+                    //     height=Convert.ToInt16(args[1]),
+                    //     weight=Convert.ToInt16(args[2]),
+                    //     wingspan=Convert.ToInt16(args[3]),
+                    //     flightStyle=args[4]
+                    // };
+                    // Console.WriteLine(bird.description());
+                    Birds newbird=new Birds("pidgey", 8)
+                       {
                         // name=args[1],
                         height=Convert.ToInt16(args[1]),
                         weight=Convert.ToInt16(args[2]),
-                        wingspan=Convert.ToInt16(args[3]),
-                        flightStyle=args[4]
+                        flightStyle=args[3]
                     };
-                    Console.WriteLine(bird.description());
+                    Console.WriteLine(newbird.description());
+
                 } 
                if(animalType=="reptiles") 
                 {
-                    var reptile=new Reptiles 
+                    Reptiles reptile=new Reptiles("Slimey") 
                     {
                         // name=args[1],
                         height=Convert.ToInt16(args[1]),
@@ -35,7 +44,7 @@ namespace Zoolandia
 
                 if(animalType=="fish") 
                 {
-                    var fishy=new Fish 
+                    Fish fishy=new Fish("Seaking") 
                     {
                         // name=args[1],
                         height=Convert.ToInt16(args[1]),
@@ -49,7 +58,7 @@ namespace Zoolandia
 
                 if(animalType=="cats") 
                 {
-                    var cat=new Cats 
+                    Cats cat=new Cats("Renbear") 
                     {
                         // name=args[1],
                         height=Convert.ToInt16(args[1]),
