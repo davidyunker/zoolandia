@@ -8,12 +8,12 @@ namespace Zoolandia
 
         public string size {get; set;}
 
+        public virtual string swims()
+        {
+          return "Fish typically enjoy swimming.";  
+        }
 
-         public Fish (string name)
-            {
-            this.name = name;
-            }
-             public override string description()
+        public override string description()
         {
             string message=string.Empty;
 

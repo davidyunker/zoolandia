@@ -7,13 +7,10 @@ namespace Zoolandia
         public int meows { get; set; }
 
      
-        // public Renly () {
-        // this.name = "cuddlehead";  
-        // }
+        public Renly () {
+        this.name = "cuddlehead";  
+        }
 
-        // public Renly () {
-        // this.eat = "wet foods";
-        // }
         public Renly (string name, string eat, int weight) { 
             this.name= name; 
             this.eat= eat; 

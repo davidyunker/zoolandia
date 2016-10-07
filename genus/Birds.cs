@@ -5,29 +5,15 @@ namespace Zoolandia
 
     public class Birds: Animal {
 
-
-        public Birds (string name)
-            {
-            this.name = name;
-            }
-         public Birds (int wingspan)
-            {
-            this.wingspan = wingspan;
-            }
-
-        public Birds (string name, int wingspan)
-            {
-            this.name = name;
-            this.wingspan = wingspan;
-            }
-            // Add a new, overloaded constructor method to your animal that takes a single string as an argument.
-
-
+          
         public int wingspan  { get; set; }
 
         public string flightStyle {get; set;}
 
-        
+        public virtual string attackResponse() 
+        {
+            return "Birds will attack when necessary."; 
+        }
         public override string description()
         {
             string message=string.Empty;
