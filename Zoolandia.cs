@@ -12,7 +12,6 @@ namespace Zoolandia
         {
             Console.WriteLine("Animal is now sleeping");
         }
-
         public int height {get; set;}
         public int weight{get; set;}
 

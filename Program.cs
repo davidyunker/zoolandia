@@ -29,19 +29,7 @@ namespace Zoolandia
                     Console.WriteLine(newbird.description());
 
                 } 
-               if(animalType=="reptiles") 
-                {
-                    Reptiles reptile=new Reptiles("Slimey") 
-                    {
-                        // name=args[1],
-                        height=Convert.ToInt16(args[1]),
-                        weight=Convert.ToInt16(args[2]),
-                        scaleTexture=args[3]
-                        
-                    };
-                    Console.WriteLine(reptile.description());
-                } 
-
+            
                 if(animalType=="fish") 
                 {
                     Fish fishy=new Fish("Seaking") 
@@ -58,7 +46,7 @@ namespace Zoolandia
 
                 if(animalType=="cats") 
                 {
-                    Cats cat=new Cats("Renbear") 
+                    Cats cat=new Cats  
                     {
                         // name=args[1],
                         height=Convert.ToInt16(args[1]),
@@ -69,6 +57,39 @@ namespace Zoolandia
                     };
                     Console.WriteLine(cat.description());
                 } 
+
+
+                if(animalType=="renly") 
+                { 
+
+                    Renly renbear=new Renly("snugglehead", "wetfood", 15)
+                    {
+                        // name=args[0], 
+                        height=Convert.ToInt16(args[1]),
+                        color=args[2],
+                        furType=args[3],
+                        meows=Convert.ToInt16(args[4])
+                    };
+
+                    Console.WriteLine(renbear.description());
+                }
+
+                    if(animalType=="ophelia") 
+                { 
+
+                    Ophelia babykitty=new Ophelia("Lady O", "wetfoods", 9)
+                    {
+                        // name=args[0], 
+                        height=Convert.ToInt16(args[1]),
+                        color=args[2],
+                        furType=args[3],
+                        jumps=Convert.ToInt16(args[4])
+                    };
+                    Console.WriteLine(babykitty.destroys());
+                    Console.WriteLine(babykitty.description());
+                    babykitty.sleep(8, "stoop");
+                    babykitty.sleep(10);
+                }
 
         }
     }
