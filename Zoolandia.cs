@@ -7,11 +7,7 @@ namespace Zoolandia
         public class Animal
     {
         public string name { get; set; }
-
-        public static void sleep ()
-        {
-            Console.WriteLine("Animal is now sleeping");
-        }
+        public Species species {get;set;}
         public int height {get; set;}
         public int weight{get; set;}
 

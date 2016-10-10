@@ -1,23 +1,16 @@
 namespace Zoolandia 
 {
 
-    public class Spearow: Birds {
+    public class Spearow: Species {
 
-            public Spearow () {
-            this.name = "angry";
+        public Spearow () {
+        this.genus = new Birds();  
         }
-
-        public Spearow (string name, int wingspan, string flightStyle) 
+    
+     public override string getSpeciesName()
         {
-            this.name = name;
-            this.wingspan = wingspan;
-            this.flightStyle = flightStyle;
-        }
-          public override string attackResponse() 
-        {
-            return $"I've got a lot of attack ready for you. I'm fierce! {base.attackResponse()}"; 
+            return "Birds species";
         }
 
     }
-
 }
