@@ -8,6 +8,19 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
+        
+        Household galelane = new Household();
+            galelane.public_name = "my house"; 
+        Nests pokenest = new Nests();
+            pokenest.public_name = "pokebox";
+        FishTank thetank = new FishTank();
+            thetank.public_name = "tanklanta"; 
+
+      Zoo zoolandia = new Zoo();
+      zoolandia.habitats.Add(galelane);
+      zoolandia.habitats.Add(pokenest);
+      zoolandia.habitats.Add(thetank);
+
          Animal animal1 = new Animal();
             animal1.species = new Renly();
             animal1.name = "Renbear";
@@ -38,6 +51,15 @@ namespace Zoolandia
             animal6.name = "Twitchy";
             animal6.weight = 7;    
         
+        galelane.inhabitants.Add(animal1);
+        galelane.inhabitants.Add(animal2);
+        thetank.inhabitants.Add(animal3);
+        thetank.inhabitants.Add(animal4);
+        pokenest.inhabitants.Add(animal5);
+        pokenest.inhabitants.Add(animal6);
+
+     
+        
 
         List<Animal> pets = new List<Animal>();
             pets.Add(animal1);
@@ -47,10 +69,16 @@ namespace Zoolandia
             pets.Add(animal5);
             pets.Add(animal6);
 
-            foreach (Animal animal in pets)
-            {
-            Console.WriteLine($"Your new {animal.species.getSpeciesName()}, {animal.name}, is {animal.weight}LBs, a member of the {animal.species.genus.getGenus()}");
-            }
+foreach(Habitat habitat in zoolandia.habitats)
+      {
+        Console.WriteLine($"\n{habitat.public_name}\nAnimals in this habitat:");
+        foreach (Animal a in habitat.inhabitants)
+        {
+          Console.WriteLine($@"{a.name} the {a.species.getSpeciesName()} in the {a.species.genus.getGenus()}.");
+        }
+      }
+  
         }
     }
 }
+
