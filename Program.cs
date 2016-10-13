@@ -11,7 +11,8 @@ namespace Zoolandia
          Animal animal1 = new Animal();
             animal1.species = new Renly();
             animal1.name = "Renbear";
-            animal1.weight = 15;  
+            animal1.weight = 15; 
+            Console.WriteLine($"Your new {animal1.species.genus.kittyVoice()}");
         
          Animal animal2 = new Animal();
             animal2.species = new Ophelia();

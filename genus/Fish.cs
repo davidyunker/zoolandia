@@ -3,12 +3,12 @@
 namespace Zoolandia 
 {
 
-    public class Fish: Genus {
+    public class Fish: Genus, IFish {
         public override string getGenus ()
         {
             return "Fish genus";
         }
-        public virtual string swims()
+        public string swims()
         {
           return "Fish typically enjoy swimming.";  
         }

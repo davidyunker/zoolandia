@@ -6,6 +6,11 @@ namespace Zoolandia
         {
             return "Unknown genus";
         }
+
+        public virtual string kittyVoice()
+        {
+            return "generic sound"; 
+        }
     }
 
 }

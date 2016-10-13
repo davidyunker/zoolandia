@@ -1,0 +1,6 @@
+interface IFish   
+{   
+  string swims ();
+
+}
+
